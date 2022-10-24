@@ -1,0 +1,269 @@
+.donate
+    padding-top: 40px
+    height: 1442px
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%)
+    &__title
+        margin: 0
+        font-weight: 400
+        font-size: 36px
+        line-height: 130%
+        text-align: center
+        color: #FFFFFF
+    &__text
+        margin-top: 10px
+        font-weight: 500
+        font-size: 16px
+        line-height: 140%
+        color: #FFFFFF
+    &__info
+        margin-top: 47px
+        font-weight: 400
+        font-size: 36px
+        color: #FE9013
+.block
+    padding-top: 42px
+    margin-top: 62px
+    height: 922px
+    background: rgba(255, 255, 255, 0.52)
+    backdrop-filter: blur(2px)
+    border-radius: 20px
+    overflow: hidden
+    &__container
+        margin: 0 auto
+        width: 976px
+    &__title
+        padding-right: 8px
+        font-weight: 400
+        font-size: 48px
+        line-height: 120%
+        text-align: center
+        color: #FE9013
+    &__text
+        margin-top: 20px
+        font-weight: 400
+        font-size: 24px
+        color: #333B41
+    &__wrapper
+        padding-right: 12px
+        margin: 0 auto
+        margin-top: 60px
+        width: 532px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__diet
+        &_day
+            font-weight: 500
+            font-size: 72px
+            text-align: center
+            text-transform: uppercase
+        &_text
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            color: #333B41
+    &__x
+        margin-bottom: 14px
+        margin-right: 54px
+    &__panda
+        margin-bottom: 40px
+        &_small
+            display: none
+    &__amount
+        margin-left: 5px
+        margin-top: 7px
+        font-weight: 400
+        font-size: 16px
+        color: #000000
+.progress 
+    margin-top: 12px
+    padding-top: 6px
+    width: 100%
+    height: 36px
+    &__bg
+        padding-top: 12px
+        width: 100%
+        height: 15px
+        background: #404950
+        border-radius: 2px
+    &__line
+        margin: 0 auto
+        width: 915px
+        height: 2px
+        background: #72828E
+    &__box
+        margin: 0 auto
+        margin-top: -34px
+        width: 955px
+        display: flex
+        justify-content: space-between
+    &__btns
+        position: relative
+        padding: 15px
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        transition: all 0.5s
+        cursor: pointer
+        &::before
+            content: ''
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            position: absolute
+            top: 8px
+            left: 8px
+            border: 2px solid #FE9013
+            opacity: 0
+            transition: all 0.3s
+        &::after
+            content: ''
+            width: 40px
+            height: 40px
+            border-radius: 50%
+            position: absolute
+            top: -2px
+            left: -2px
+            border: 2px solid #FE9013
+            opacity: 0
+            transition: all 0.3s
+        &_btn
+            width: 10px
+            height: 10px
+            background: #FFEE2E
+            border-radius: 50%
+            position: relative
+            &__activ::before
+                opacity: 1
+            &__activ::after
+                opacity: 1
+    &__container
+        margin-top: 10px
+        width: 951px
+        display: flex
+        justify-content: space-between
+    &__item
+        font-weight: 500
+        font-size: 26px
+        text-transform: uppercase
+        color: #333B41
+        transition: all 0.3s
+        span
+            font-size: 20px
+        &_activ
+            color: #FE9013
+        &_50
+            transform: translateX(-20px)
+        &_100
+            transform: translateX(-20px)
+        &_250
+            transform: translateX(-25px)
+        &_500
+            transform: translateX(-30px)
+        &_1000
+            transform: translateX(-20px)
+        &_2000
+            transform: translateX(-10px)
+    &__form
+        position: relative
+        margin-top: 90px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__field  
+        padding-left: 10px
+        width: 255px
+        height: 50px
+        background: transparent
+        border: 1px solid #929699
+        color: #929699
+        outline: 0
+        outline-offset: 0
+        border-radius: 2px
+        -moz-appearance: textfield
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button
+            -webkit-appearance: none
+            margin: 0
+        &::placeholder
+            font-weight: 400
+            font-size: 16px
+            color: #929699
+        &:valid:focus
+            border-color: #4B9200
+            color: #4B9200
+        &:invalid:focus ~ .progress__field:placeholder
+            color: #4B9200
+        &:valid:focus ~ .progress__dollar
+            color: #4B9200
+        &:invalid:focus
+            border-color: #D31414
+            color: #D31414
+        &:invalid:focus ~ .progress__field:placeholder
+            color: #D31414
+        &:invalid:focus ~ .progress__dollar
+            color: #D31414
+    &__dollar
+        position: absolute
+        font-size: 22px
+        top: 15px
+        left: 602px
+        color: #929699
+    &__radiobuttons
+        margin-top: 25px
+        margin-right: 14px
+        display: flex
+        justify-content: space-between
+        width: 198px
+    &__radio
+        position: relative
+        &_input
+            appearance: none
+            position: absolute
+        &_label
+            padding-left: 25px
+            font-weight: 400
+            font-size: 16px
+            color: #333B41
+            cursor: pointer
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 14px
+                border: 1px solid #FE9013
+                background: transparent
+                border-radius: 50%
+                position: absolute
+                top: 1px
+                left: 0px
+                z-index: 2
+                cursor: pointer
+                transition: opacity 0.2s linear
+            &:after
+                content: ''
+                display: block
+                width: 9px
+                height: 9px
+                border: 1px solid #4B9200
+                background: #4B9200
+                opacity: 0
+                border-radius: 50%
+                position: absolute
+                top: 3.5px
+                left: 2.5px
+                z-index: 1
+                cursor: pointer
+                transition: opacity 0.2s linear
+        &_input:checked + &_label:after
+            opacity: 1
+    &__button
+        margin-top: 32px
+        margin-left: 2px
+    &__share
+        margin-top: 33px
+        text-align: center
+        font-weight: 400
+        font-size: 16px
+        color: #333B41
