@@ -1,0 +1,145 @@
+.pets
+    min-height: 1106px
+    position: relative
+    overflow-x: hidden
+    background: url('../../../assets/images/palm_left.png') bottom -2px (left 0/auto) no-repeat, url('../../../assets/images/strelitzia_right.png') bottom -2px (right 0/auto) no-repeat
+    &__btn
+        width: 62px
+        height: 62px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        background: $default_color_bg
+        cursor: pointer
+        border: none
+        &_left
+            position: absolute
+            top: 405px
+            left: -52px
+            z-index: 100
+        &_right
+            position: absolute
+            top: 405px
+            right: -52px
+        &:hover
+            background: $hover_color_bg
+        &:active
+            background: $activ_color_bg
+    &__slider
+        margin: 0 auto
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 19px 29px
+        transition: all 0.5
+    &__grad
+        height: 426px
+        width: 366px
+        background: $default_color_bg
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 6px
+        animation: change 2s both
+    &__item
+        height: 424px
+        width: 364px
+        border-radius: 5px
+        background: #FFFFFF
+    &__image
+        position: relative
+        width: 364px
+        height: 364px
+        border-top-left-radius: 4px
+        border-top-right-radius: 4px
+        transition: all 0.5s
+        &_pandas
+            background: url('../../../assets/images/1_pandas.png') center (center/cover) no-repeat
+        &_eagles
+            background: url('../../../assets/images/2_eagles.png') center (center/cover) no-repeat
+        &_gorillas
+            background: url('../../../assets/images/3_gorillas.png') center (center/cover) no-repeat
+        &_sloth
+            background: url('../../../assets/images/4_sloth.png') center (center/cover) no-repeat
+        &_cheetahs
+            background: url('../../../assets/images/5_cheetas.png') center (center/cover) no-repeat
+        &_ping
+            background: url('../../../assets/images/6_ping.png') center (center/cover) no-repeat
+        &_elk
+            background: url('../../../assets/images/elk.jpeg') center (center/cover) no-repeat
+        &_beers
+            background: url('../../../assets/images/bears.jpeg') center (center/cover) no-repeat
+        &_kenguru
+            background: url('../../../assets/images/kenguru.jpeg') center (center/cover) no-repeat
+        &_crocodile
+            background: url('../../../assets/images/crocodile.jpeg') center (center/cover) no-repeat
+        &_rabbit
+            background: url('../../../assets/images/rabbit.jpeg') center (center/cover) no-repeat
+        &_tushkan
+            background: url('../../../assets/images/tushkan.jpeg') center (center/cover) no-repeat
+        &_kalan
+            background: url('../../../assets/images/kalan.jpeg') center (center/cover) no-repeat
+        &_jaguar
+            background: url('../../../assets/images/jaguar.jpeg') center (center/cover) no-repeat
+        &_deer
+            background: url('../../../assets/images/deer.jpeg') center (center/cover) no-repeat
+        &_dolphin
+            background: url('../../../assets/images/dolphin.jpeg') center (center/cover) no-repeat
+        &::before
+            content: ''
+            width: 366px
+            height: 366px
+            border-radius: 5px
+            background-color: #000000
+            opacity: 0
+            position: absolute
+            top: 0
+            left: 0
+            transition: all 0.5s
+        &:hover
+            margin-top: -10px
+            margin-left: -10px
+            margin-bottom: -60px
+            width: 386px
+            height: 386px
+            border-radius: 5px
+        &:hover:before
+            margin-bottom: -370px
+            width: 386px
+            height: 386px
+            border-radius: 5px
+            opacity: 0.5
+        &:hover ~ .pets__content 
+            color: #FFFFFF
+    &__content
+        position: relative
+        transition: all 1s
+    &__subtitle
+        margin-top: 10px
+        margin-left: 16px
+        font-weight: 500
+        font-size: 16px
+        text-transform: uppercase
+    &__text
+        margin-left: 16px
+        font-weight: 300
+        font-size: 15px
+    &__food
+        position: absolute
+        &_banana
+            top: 0
+            left: 320px
+        &_meet
+            top: 0
+            left: 310px
+    &__button
+        display: block
+        margin: 0 auto
+        margin-top: 80px
+
+@keyframes change 
+    0% 
+        opacity: 0
+    100% 
+        opacity: 1

@@ -1,0 +1,178 @@
+.footer
+    padding-top: 40px
+    min-height: 403px
+    background-color: #111115
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__left
+        height: 352px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__logo
+        position: relative
+        &_link
+            padding-top: 3px
+            height: 50px
+            width: 82px
+            display: block
+            text-decoration: none
+            font-style: normal
+            font-weight: 400
+            font-size: 19.0145px
+            line-height: 120%
+            text-align: center
+            border: 1.2px solid #FFFFFF
+            border-radius: 2px
+            color: #FFFFFF
+            transition: all 0.3s
+            &:hover
+                margin-top: -2px
+                margin-left: -3px
+                margin-right: -3px
+                margin-bottom: -2px
+                padding-top: 5px
+                height: 52px
+                width: 88px
+                border-color: #FFD27F
+            &:active
+                border-color: #f9864c
+        &_img
+            position: absolute
+            top: 24px
+            left: 12px
+    &__button
+        padding-top: 16px
+        height: 38px
+        margin-top: 26px
+        border-radius: 5px
+        text-decoration: none
+    &__right
+        height: 353px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-end
+    &__author
+        font-weight: 100
+        font-size: 16px
+        color: #FFFFFF
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            color: #FFD27F
+        &:active
+            color: #4B9200
+        &:active>.footer__author_name
+            border-bottom: #4B9200 solid 1px
+        &:active>.footer__author_year
+            border-bottom: #4B9200 solid 1px
+        &_year
+            margin-top: 12px
+.social
+    height: 134px
+    width: 115px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__item
+        display: flex
+        justify-content: left
+        align-items: center
+        cursor: pointer
+        &:hover
+            color: $hover_color_bg
+        &:hover>.social__name
+            color: $hover_color_bg
+        &:hover>.social__logo
+            background: $hover_color_bg
+        &:active
+            color: $activ_color_bg
+        &:active>.social__name
+            color: $activ_color_bg
+        &:active>.social__logo
+            background: $activ_color_bg
+    &__logo
+        width: 26px
+        height: 26px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        background: rgba(196, 196, 196, 0.5)
+        transition: all 0.3s
+    &__name
+        margin-left: 12px
+        font-weight: 400
+        font-size: 16px
+        text-decoration: none
+        color: #FFFFFF
+        transition: all 0.3s
+.navigation
+    margin: 0
+    margin-left: 30px
+    width: 382px
+    display: flex
+    justify-content: space-between
+    &__item
+            list-style-type: none
+    &__link
+        padding: 10px
+        text-decoration: none
+        font-weight: 500
+        font-size: 16px
+        color: #FFFFFF
+        transition: 0.3s all
+        &:hover
+            color: #FFD27F
+        &:active
+            color: #f9864c
+        &_active
+            background: $default_color_bg
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+.form
+    &__description
+        font-weight: 400
+        font-size: 24px
+        color: #FFFFFF
+    &__email
+        margin-top: 14px
+        padding: 10px
+        width: 204px
+        height: 22px
+        border: 1px solid orange
+        border-radius: 2px
+        color: #BDBDBD
+        background: #111115
+        outline: 0
+        outline-offset: 0
+        transition: 0.3s all
+        &::placeholder
+            font-weight: 400
+            font-size: 16px
+            color: #BDBDBD
+        &:active, &:hover
+            outline: 0
+            outline-offset: 0
+        &:valid:focus
+            border-color: #4B9200
+        &:valid:focus ~ .form__submit
+            border: 2px solid #4B9200
+            color: #4B9200
+        &:invalid:focus
+            border-color: #D31414
+            color: #D31414
+        &:invalid:focus ~ .form__submit
+            color: #D31414
+            border: 2px solid #D31414
+    &__submit
+        margin-left: 10px
+        width: 129px
+        height: 42px
+        background: #F1F3F2   
+        border: 1px solid #333B41
+        border-radius: 5px
+        cursor: pointer
